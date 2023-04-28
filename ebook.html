@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="./ebook.css">
+        <title>Sprec</title>
+    </head>
+    
+    <body>
+
+        <div class="topbar">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+         </div>
+
+         <div class="container">
+            <video controls id="meu_video">
+            <source src="imagens/Vídeo sem título ‐ Feito com o Clipchamp.mp4" type="video/mp4">
+            </video>
+            <div class="botao_comprar">
+            <button id="botao-compra" style="display: none;">Comprar agora</button>  
+            </div> 
+            <script languag="javascript" type="text/jscript">
+              const video = document.querySelector('video');
+               const botaoCompra = document.querySelector('#botao-compra');
+               video.addEventListener('ended', function() {
+               botaoCompra.style.display = 'block';
+});</script> 
+         </div>          
+
+        <!--<div class="container_central">
+            detalhe
+            <div class="container">
+                <div class="txtLogin">
+                    <p><b>Login</b></p>
+                   </div>
+                      <form>
+                          <input type="text" id="fnome" name="fnome" placeholder="Nome">
+                          <input type="text" id="fsobre" name="fsobre" placeholder="Sobrenome">
+                          <input type="tel" id="ftel" name="ftel" placeholder="Telefone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                          required><p></p>
+                          <input type="submit" value="Logar">
+                      </form>
+                    <p>Ainda não tem conta?<a href="./cadastro.html">Criar conta</a></p>
+            </div>
+        </div> -->
+
+        <footer>
+            <div class="containerfooter">
+              <div class="rowfooter">
+                <div class="col-md-1">
+                  <h3>Informações de contato</h3>
+                  <p>Endereço: Rua Exemplo, 123</p>
+                  <p>Telefone: (11) 1234-5678</p>
+                  <p>E-mail: contato@exemplo.com</p>
+                </div>
+                <div class="col-md-1">
+                  <h3>Redes sociais</h3>
+                  <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>          
+
+    </body>
+
+</html>
